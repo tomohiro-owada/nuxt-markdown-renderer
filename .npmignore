@@ -1,0 +1,22 @@
+# Source files
+src/
+playground/
+*.log
+*.tgz
+
+# Development files
+.nuxt/
+.output/
+node_modules/
+.DS_Store
+
+# Config files
+.eslintrc
+.prettierrc
+tsconfig.json
+build.config.ts
+eslint.config.mjs
+
+# Git files
+.git/
+.gitignore

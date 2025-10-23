@@ -1,0 +1,55 @@
+{
+  "name": "nuxt-markdown-renderer",
+  "version": "0.1.0",
+  "description": "Nuxt module to render HTML pages as Markdown by appending .md to URLs",
+  "keywords": [
+    "nuxt",
+    "nuxt-module",
+    "markdown",
+    "html-to-markdown"
+  ],
+  "author": "towada",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/towada/nuxt-markdown-renderer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/towada/nuxt-markdown-renderer/issues"
+  },
+  "homepage": "https://github.com/towada/nuxt-markdown-renderer#readme",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
+  },
+  "main": "./dist/module.cjs",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepack": "nuxt-module-build build",
+    "dev": "nuxi dev playground",
+    "dev:build": "nuxi build playground",
+    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
+    "release": "npm run prepack && npm publish",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@nuxt/kit": "^4.1.2",
+    "turndown": "^7.2.0"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@nuxt/eslint-config": "^0.7.3",
+    "@nuxt/module-builder": "^1.0.0",
+    "@nuxt/schema": "^4.1.2",
+    "@types/node": "latest",
+    "@types/turndown": "^5.0.5",
+    "eslint": "^9.17.0",
+    "nuxt": "^4.1.2",
+    "typescript": "latest"
+  }
+}
