@@ -8,15 +8,15 @@
     "markdown",
     "html-to-markdown"
   ],
-  "author": "towada",
+  "author": "大和田知洋 <info@tomoporo.net>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/towada/nuxt-markdown-renderer.git"
+    "url": "git+https://github.com/tomohiro-owada/nuxt-markdown-renderer.git"
   },
   "bugs": {
-    "url": "https://github.com/towada/nuxt-markdown-renderer/issues"
+    "url": "https://github.com/tomohiro-owada/nuxt-markdown-renderer/issues"
   },
-  "homepage": "https://github.com/towada/nuxt-markdown-renderer#readme",
+  "homepage": "https://github.com/tomohiro-owada/nuxt-markdown-renderer#readme",
   "license": "MIT",
   "type": "module",
   "exports": {
