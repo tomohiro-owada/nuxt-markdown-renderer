@@ -5,6 +5,6 @@ export default defineBuildConfig({
   externals: ['@nuxt/kit', '@nuxt/schema', 'nuxt', 'h3', 'turndown'],
   declaration: false,
   rollup: {
-    emitCJS: true
-  }
+    emitCJS: true,
+  },
 })

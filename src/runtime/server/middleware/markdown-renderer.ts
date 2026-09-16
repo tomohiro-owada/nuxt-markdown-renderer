@@ -27,8 +27,8 @@ export default defineEventHandler(async (event) => {
     const response = await fetch(originalUrl, {
       headers: {
         'User-Agent': 'nuxt-markdown-renderer',
-        'Accept': 'text/html'
-      }
+        'Accept': 'text/html',
+      },
     })
 
     if (!response.ok) {
@@ -60,7 +60,8 @@ generated: ${new Date().toISOString()}
     setResponseHeader(event, 'X-Markdown-Renderer', 'nuxt-markdown-renderer')
 
     return fullMarkdown
-  } catch (error) {
+  }
+  catch (error) {
     console.error('[nuxt-markdown-renderer] Error:', error)
 
     // Return error as markdown
