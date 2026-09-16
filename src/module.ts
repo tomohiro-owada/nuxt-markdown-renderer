@@ -34,8 +34,8 @@ export default defineNuxtModule<ModuleOptions>({
     name: 'nuxt-markdown-renderer',
     configKey: 'markdownRenderer',
     compatibility: {
-      nuxt: '^4.0.0'
-    }
+      nuxt: '^4.0.0',
+    },
   },
   defaults: {
     enabled: true,
@@ -47,8 +47,8 @@ export default defineNuxtModule<ModuleOptions>({
       bulletListMarker: '-',
       emDelimiter: '_',
       strongDelimiter: '**',
-      linkStyle: 'inlined'
-    }
+      linkStyle: 'inlined',
+    },
   },
   setup(options, nuxt) {
     // Skip if module is disabled
@@ -70,8 +70,8 @@ export default defineNuxtModule<ModuleOptions>({
       nitroConfig.runtimeConfig = nitroConfig.runtimeConfig || {}
       nitroConfig.runtimeConfig.markdownRenderer = {
         suffix: options.suffix,
-        turndownOptions: options.turndownOptions
+        turndownOptions: options.turndownOptions,
       }
     })
-  }
+  },
 })

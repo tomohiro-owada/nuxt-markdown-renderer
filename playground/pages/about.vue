@@ -1,3 +1,9 @@
+<script setup>
+defineOptions({
+  name: 'AboutPage',
+})
+</script>
+
 <template>
   <div class="container">
     <h1>About This Module</h1>

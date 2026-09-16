@@ -1,4 +1,8 @@
 <script setup>
+defineOptions({
+  name: 'SamplePage',
+})
+
 useHead({
   title: 'My Pimpin Website - Sample Page',
   meta: [
@@ -13,8 +17,8 @@ useHead({
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: 'My Pimpin Website - Sample Page' },
     { name: 'twitter:description', content: 'A sample website demonstrating HTML to Markdown conversion' },
-    { name: 'twitter:image', content: 'http://localhost:3001/sample-image.jpg' }
-  ]
+    { name: 'twitter:image', content: 'http://localhost:3001/sample-image.jpg' },
+  ],
 })
 </script>
 

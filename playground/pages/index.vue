@@ -1,3 +1,9 @@
+<script setup>
+defineOptions({
+  name: 'HomePage',
+})
+</script>
+
 <template>
   <div class="container">
     <h1>nuxt-markdown-renderer Demo</h1>

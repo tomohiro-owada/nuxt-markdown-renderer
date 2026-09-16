@@ -32,7 +32,7 @@ export function extractMetadata(html: string): PageMetadata {
   }
 
   // Extract meta tags
-  const metaRegex = /<meta\s+([^>]+)>/gi
+  const metaRegex = /<meta\b([^>]*)>/gi
   let match
 
   while ((match = metaRegex.exec(html)) !== null) {
@@ -170,10 +170,10 @@ export function metadataToFrontmatter(metadata: PageMetadata, sourceUrl: string)
   // Add any other metadata
   for (const [key, value] of Object.entries(metadata)) {
     if (
-      key.startsWith('meta_') &&
-      value &&
-      !key.includes('og_') &&
-      !key.includes('twitter_')
+      key.startsWith('meta_')
+      && value
+      && !key.includes('og_')
+      && !key.includes('twitter_')
     ) {
       const cleanKey = key.replace('meta_', '')
       lines.push(`${cleanKey}: "${value.replace(/"/g, '\\"')}"`)

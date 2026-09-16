@@ -21,7 +21,7 @@ export function htmlToMarkdown(html: string, options: TurndownOptions = {}): str
   // Add custom rules if needed
   turndownService.addRule('strikethrough', {
     filter: ['del', 's', 'strike'],
-    replacement: (content) => `~~${content}~~`
+    replacement: content => `~~${content}~~`,
   })
 
   // Convert and return
